@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Julian Lorenzatti | Portfolio & CV</title>
+    <title>Julian Lorenzatti | CV</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -11,129 +11,116 @@
     />
   </head>
   <body>
-    <!-- HEADER / HERO -->
-    <header class="hero">
-      <div class="container">
-        <h1>Julian Lorenzatti</h1>
-        <h2>
-          Estudiante de Ingeniería en Sistemas & Backend Developer Trainee
-        </h2>
-        <p class="location">
-          <i class="fa-solid fa-location-dot"></i> Córdoba, Argentina
-        </p>
-
-        <div class="social-links">
-          <a href="mailto:lorenzattijulian@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i> Email</a
-          >
-          <a href="https://linkedin.com/in/tu-perfil" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-          >
-          <a href="https://github.com/tu-usuario" target="_blank"
-            ><i class="fa-brands fa-github"></i> GitHub</a
-          >
+    <!-- HOJA TIPO PAPEL -->
+    <main class="paper">
+      <!-- ENCABEZADO (CONTACTO A LA IZQUIERDA / NOMBRE Y TÍTULO A LA DERECHA) -->
+      <header class="header">
+        <div class="contact-info">
+          <p>+54 9 3575-416533</p>
+          <p>Córdoba, Argentina</p>
+          <p>
+            <a href="mailto:lorenzattijulian@gmail.com"
+              >lorenzattijulian@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank"
+              >linkedin.com/in/julianlorenzatti</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/tu-usuario" target="_blank"
+              >github.com/julianlorenzatti</a
+            >
+          </p>
         </div>
-      </div>
-    </header>
+        <div class="name-title">
+          <h1>Julian Lorenzatti</h1>
+          <h2>ESTUDIANTE DE INGENIERÍA EN SISTEMAS · BACKEND DEVELOPER</h2>
+        </div>
+      </header>
 
-    <div class="container main-content">
+      <hr class="divider" />
+
       <!-- SOBRE MÍ -->
-      <section class="card">
-        <h2><i class="fa-solid fa-user"></i> Sobre Mí</h2>
+      <section class="section">
+        <h3>SOBRE MÍ</h3>
         <p>
           Estudiante de Ingeniería en Sistemas de Información (UTN), apasionado
           de la resolución de problemas lógicos y algorítmicos. Con capacidad
           para investigar, adaptarme rápido a entornos cambiantes y colaborar
-          eficazmente en equipo.
+          eficazmente en equipo. Busco una pasantía donde dar mis primeros pasos
+          profesionales y aportar valor en proyectos técnicos.
         </p>
         <p>
           Actualmente estoy enfocándome en el desarrollo backend de
-          aplicaciones, profundizando en
-          <strong
-            >Java con el framework Spring Boot, APIs REST y arquitectura basada
-            en microservicios</strong
-          >. Además, tengo un fuerte interés en el relevamiento de
-          requerimientos, el diseño de sistemas y la optimización de procesos.
+          aplicaciones, profundizando en Java con Spring Boot, la creación de
+          APIs REST y arquitectura basada en microservicios. Además, tengo un
+          fuerte interés en el relevamiento de requerimientos, diseño de
+          sistemas y optimización de procesos.
         </p>
       </section>
 
-      <!-- HABILIDADES TÉCNICAS -->
-      <section class="card">
-        <h2><i class="fa-solid fa-code"></i> Habilidades Técnicas</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Lenguajes</h3>
-            <span class="tag">Java</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Python</span>
-          </div>
-          <div class="skill-category">
-            <h3>Backend & Frameworks</h3>
-            <span class="tag">Spring Boot</span>
-            <span class="tag">Spring Data JPA</span>
-            <span class="tag">Hibernate</span>
-            <span class="tag">APIs REST</span>
-            <span class="tag">Spring Security</span>
-            <span class="tag">Microservicios</span>
-          </div>
-          <div class="skill-category">
-            <h3>Bases de Datos & Herramientas</h3>
-            <span class="tag">MySQL</span>
-            <span class="tag">SQL Server</span>
-            <span class="tag">H2</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Git</span>
-            <span class="tag">IntelliJ IDEA</span>
-            <span class="tag">Postman</span>
-            <span class="tag">Linux</span>
-          </div>
+      <!-- HABILIDADES -->
+      <section class="section">
+        <h3>HABILIDADES</h3>
+        <div class="grid-list">
+          <p><strong>Lenguajes:</strong> Java, JavaScript, Python</p>
+          <p>
+            <strong>Tech Stack:</strong> Spring Boot, Spring Data JPA,
+            Hibernate, APIs REST, Spring Security, Docker, MySQL, SQL Server,
+            H2, Git, Linux
+          </p>
+          <p>
+            <strong>Diseño & Arquitectura:</strong> Microservicios, POO,
+            Patrones de Diseño (GRASP, State, Strategy), Relevamiento de
+            Requerimientos
+          </p>
         </div>
       </section>
 
       <!-- PROYECTOS -->
-      <section class="card">
-        <h2>
-          <i class="fa-solid fa-diagram-project"></i> Proyectos Destacados
-        </h2>
+      <section class="section">
+        <h3>PROYECTOS</h3>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Sistema de Gestión para Taller Mecánico</h3>
-            <a
-              href="https://github.com/tu-usuario/proyecto-taller"
-              target="_blank"
-              class="btn-github"
-              ><i class="fa-brands fa-github"></i> Ver Código</a
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title"
+              >Sistema de Gestión para Taller Mecánico</span
+            >
+            <span class="item-subtitle"
+              ><a href="https://github.com/tu-usuario/taller" target="_blank"
+                >GitHub</a
+              ></span
             >
           </div>
-          <p class="tech-stack">Java • Swing • JPA • Hibernate • MySQL</p>
+          <p class="tech">Java, Swing, JPA, Hibernate, MySQL</p>
           <ul>
             <li>
-              Aplicación de escritorio para la administración y control de
-              órdenes de servicio, clientes y vehículos.
+              Aplicación de escritorio diseñada para la administración y control
+              de órdenes de servicio, clientes y vehículos.
             </li>
             <li>
               Implementación bajo principios de POO e interfaz gráfica
               interactiva con Java Swing.
             </li>
             <li>
-              Modelado de la lógica de negocio, validación de datos y gestión de
-              la persistencia mediante JPA / Hibernate.
+              Modelado de lógica de negocio, validación de datos y gestión de
+              persistencia mediante JPA/Hibernate.
             </li>
           </ul>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3>FullTech e-Commerce</h3>
-            <a
-              href="https://github.com/tu-usuario/proyecto-ecommerce"
-              target="_blank"
-              class="btn-github"
-              ><i class="fa-brands fa-github"></i> Ver Código</a
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">FullTech e-Commerce</span>
+            <span class="item-subtitle"
+              ><a href="https://github.com/tu-usuario/ecommerce" target="_blank"
+                >GitHub</a
+              ></span
             >
           </div>
-          <p class="tech-stack">HTML5 • CSS3 • JavaScript Native</p>
+          <p class="tech">HTML, CSS, JavaScript Native</p>
           <ul>
             <li>
               Desarrollo de frontend responsivo enfocado en la interacción del
@@ -148,26 +135,45 @@
       </section>
 
       <!-- EDUCACIÓN -->
-      <section class="card">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
-        <div class="timeline-item">
-          <h3>Ingeniería en Sistemas de Información</h3>
+      <section class="section">
+        <h3>EDUCACIÓN</h3>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title"
+              >Ingeniería en Sistemas de Información</span
+            >
+            <span class="item-date">2023 — Presente</span>
+          </div>
           <p class="institution">
-            Universidad Tecnológica Nacional (UTN) | 2023 - Actualidad
+            Universidad Tecnológica Nacional (UTN) — Córdoba
           </p>
         </div>
-        <div class="timeline-item">
-          <h3>Técnico en Informática Profesional y Personal</h3>
-          <p class="institution">IPET N°58 General Mosconi | 2015 - 2022</p>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title"
+              >Técnico en Informática Profesional y Personal</span
+            >
+            <span class="item-date">2015 — 2022</span>
+          </div>
+          <p class="institution">IPET N°58 General Mosconi</p>
         </div>
       </section>
-    </div>
 
-    <footer>
-      <p>
-        © Julian Lorenzatti • Desarrollado con HTML/CSS e implementado en GitHub
-        Pages
-      </p>
-    </footer>
+      <!-- IDIOMAS -->
+      <section class="section">
+        <h3>IDIOMAS</h3>
+        <p>
+          <strong>Español:</strong> Nativo | <strong>Inglés:</strong> Intermedio
+        </p>
+      </section>
+    </main>
+
+    <!-- BOTONES FLOTANTES EN LA ESQUINA INFERIOR DERECHA -->
+    <div class="floating-buttons">
+      <button class="btn-lang">EN / ES</button>
+      <a href="CV_Julian_Lorenzatti.pdf" download class="btn-download">
+        <i class="fa-solid fa-arrow-down"></i> Descargar PDF
+      </a>
+    </div>
   </body>
 </html>

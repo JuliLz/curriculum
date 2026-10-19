@@ -1,188 +1,184 @@
-/* RESET & GENERAL STYLES */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
+  background-color: #d1d5db; /* Fondo gris suave igual al de la imagen */
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2937;
+  padding: 40px 15px;
+  line-height: 1.5;
 }
 
-.container {
-  max-width: 900px;
+/* CONTENEDOR TIPO HOJA DE PAPEL */
+.paper {
+  background: #ffffff;
+  max-width: 850px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 50px 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
 }
 
-/* HERO / HEADER */
-.hero {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-}
-
-.hero h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #38bdf8;
-  margin-bottom: 10px;
-}
-
-.location {
-  font-size: 0.95rem;
-  color: #94a3b8;
-  margin-bottom: 20px;
-}
-
-.social-links a {
-  display: inline-block;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px 16px;
-  margin: 0 5px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  background: #38bdf8;
-  color: #0f172a;
-}
-
-/* MAIN CONTENT & CARDS */
-.main-content {
-  margin-top: -30px;
-  margin-bottom: 50px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.card h2 {
-  font-size: 1.4rem;
-  color: #1e293b;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
-}
-
-.card p {
-  margin-bottom: 12px;
-  color: #475569;
-}
-
-/* SKILLS TAGS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* ENCABEZADO */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
 }
 
-.skill-category h3 {
-  font-size: 1rem;
-  color: #0f172a;
+.contact-info {
+  font-size: 0.82rem;
+  color: #4b5563;
+}
+
+.contact-info a {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.name-title {
+  text-align: right;
+}
+
+.name-title h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.name-title h2 {
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  color: #6b7280;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+/* SECCIONES */
+.section {
+  margin-bottom: 22px;
+}
+
+.section h3 {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  color: #111827;
+  font-weight: bold;
+  border-bottom: 1px solid #111827;
+  padding-bottom: 2px;
   margin-bottom: 10px;
 }
 
-.tag {
-  display: inline-block;
-  background: #e0f2fe;
-  color: #0369a1;
-  padding: 5px 12px;
-  border-radius: 15px;
+.section p {
+  font-size: 0.88rem;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.grid-list p {
   font-size: 0.85rem;
-  font-weight: 600;
-  margin: 3px;
+  margin-bottom: 5px;
 }
 
-/* PROJECTS */
-.project-card {
-  background: #f8fafc;
-  border-left: 4px solid #38bdf8;
-  padding: 18px;
-  border-radius: 0 8px 8px 0;
-  margin-bottom: 20px;
+/* ELEMENTOS / PROYECTOS */
+.item {
+  margin-bottom: 12px;
 }
 
-.project-header {
+.item-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: baseline;
 }
 
-.project-header h3 {
-  color: #0f172a;
-  font-size: 1.1rem;
+.item-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #111827;
 }
 
-.tech-stack {
-  font-size: 0.85rem;
-  color: #64748b;
-  font-weight: 600;
-  margin-top: 2px;
-  margin-bottom: 10px;
-}
-
-.btn-github {
-  color: #0f172a;
+.item-date,
+.item-subtitle a {
+  font-size: 0.82rem;
+  color: #6b7280;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  border: 1px solid #cbd5e1;
-  padding: 4px 10px;
-  border-radius: 6px;
-  background: white;
-  transition: 0.2s;
 }
 
-.btn-github:hover {
-  background: #0f172a;
-  color: white;
-}
-
-.project-card ul {
-  padding-left: 20px;
-  color: #475569;
-  font-size: 0.95rem;
-}
-
-/* EDUCATION */
-.timeline-item {
-  margin-bottom: 15px;
-}
-
-.timeline-item h3 {
-  font-size: 1.05rem;
-  color: #0f172a;
+.tech {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 3px;
 }
 
 .institution {
-  color: #64748b;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+  font-style: italic;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  color: #94a3b8;
+ul {
+  padding-left: 18px;
   font-size: 0.85rem;
+  color: #374151;
+}
+
+ul li {
+  margin-bottom: 3px;
+}
+
+/* BOTONES FLOTANTES ESQUINA INFERIOR DERECHA */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.btn-lang {
+  background-color: #e5e7eb;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-download {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-download:hover {
+  background-color: #1f2937;
 }
